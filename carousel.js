@@ -35,6 +35,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+
+
     function updateDots(){
       const dots = dotsWrap.querySelectorAll('.dot');
       dots.forEach(d=>d.classList.remove('active'));
@@ -93,6 +95,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       }, 900);
       
     });
+    const btn = document.getElementById('btn-ver-todos');
+const eventosOcultos = document.querySelectorAll('.event-card.oculto');
+
+btn.addEventListener('click', () => {
+  eventosOcultos.forEach(evento => {
+    evento.classList.remove('oculto');
+  });
+  btn.style.display = 'none'; // esconde o botão depois de mostrar os eventos
+});
+
   });
 
   

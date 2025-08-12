@@ -21,7 +21,7 @@ body{
 
 /* Header */
 header{background:var(--card);position:sticky;top:0;z-index:50;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
-.nav{display:flex;align-items:center;justify-content:space-between}
+.nav{display:flex;align-items:center;justify-content:space-between; }
 .brand{display:flex;align-items:center;gap:12px}
 .logo{
   width:46px;height:46px;
@@ -55,11 +55,11 @@ nav a:hover{color:var(--primary)}
     box-shadow:0 -6px 30px rgba(11,14,20,.06)
   }
   nav.open ul{transform:translateY(0)}
-  .nav-toggle{display:block}
+  .nav-toggle{display:block;}
 }
 
 /* Carrossel */
-.hero{margin-top:18px;border-radius:18px;overflow:hidden}
+.hero{margin-top:18px;border-radius:18px;overflow:hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.05)}
 .carousel{position:relative;height:400px}
 .slide{
   position:absolute;inset:0;
@@ -69,8 +69,9 @@ nav a:hover{color:var(--primary)}
   transition:opacity .6s ease,transform .6s ease;
   opacity:0;transform:scale(1.03)
 }
-.slide.active{opacity:1;transform:scale(1)}
+.slide.active{opacity:1;transform:scale(1); }
 .slide-content{
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
   max-width:500px;
   background:rgba(255,255,255,0.9);
   padding:20px;
@@ -166,12 +167,15 @@ section{scroll-margin-top: 80px; padding: 16px; }
 .about-content h2 {
   margin-bottom: 15px;
   color: var(--primary);
+  margin-bottom: 15px;
 }
 
 .about-content p {
   line-height: 1.5;
   margin-bottom: 10px;
   color: #333;
+  font-size: 1.1rem;
+
 }
 
 /* Imagem responsiva */
@@ -267,6 +271,33 @@ section{scroll-margin-top: 80px; padding: 16px; }
 
 .events > .btn-cta:hover {
   background: var(--primary-dark);
+}
+
+
+.date {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.oculto {
+  display: none;
+}
+
+#btn-ver-todos {
+  margin-top: 25px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #005bbb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+#btn-ver-todos:hover {
+  background-color: #004a9a;
 }
 
 
