@@ -99,7 +99,7 @@ nav a:hover{color:var(--primary)}
 }
 
 /* Segmentos e diferenciais */
-section{margin:40px 0}
+section{scroll-margin-top: 80px; padding: 16px;}
 .grid{display:grid;gap:16px}
 .segments .grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .segment{
@@ -162,6 +162,7 @@ section{margin:40px 0}
 /* Contato */
 .contact{display:grid;grid-template-columns:1fr 380px;gap:20px}
 .contact-card{
+  margin-top: 16px;
   background:var(--card);
   padding:18px;border-radius:12px;
   box-shadow:0 6px 20px rgba(0,0,0,0.04)
@@ -188,3 +189,4 @@ footer{margin-top:30px;padding:20px 0;border-top:1px solid #edf2f7}
 h2{margin-bottom:12px}
 .muted{color:var(--muted)}
 a:focus,button:focus,input:focus,textarea:focus{outline:3px solid rgba(39,110,241,0.12);outline-offset:3px}
+
