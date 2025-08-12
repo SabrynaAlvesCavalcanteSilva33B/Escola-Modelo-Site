@@ -7,7 +7,7 @@
   --primary-dark: #1d50b3;
   --accent: #ffb703;
   --radius: 12px;
-  --container: 1100px;
+  --container: 1440px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{
@@ -59,7 +59,7 @@ nav a:hover{color:var(--primary)}
 }
 
 /* Carrossel */
-.hero{margin-top:18px;border-radius:18px;overflow:hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.05)}
+.hero{margin-top:18px;border-radius:18px;overflow:hidden; }
 .carousel{position:relative;height:400px}
 .slide{
   position:absolute;inset:0;
