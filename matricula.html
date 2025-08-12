@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Escola Modelo — Matrícula</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap" style="max-width: 600px; margin: 40px auto;">
+    <h1>Formulário de Matrícula</h1>
+    <form id="matriculaForm" class="contact-card">
+      <div class="field">
+        <label>Nome Completo</label>
+        <input type="text" name="name" required />
+      </div>
+      <div class="field">
+        <label>E-mail</label>
+        <input type="email" name="email" required />
+      </div>
+      <div class="field">
+        <label>Telefone</label>
+        <input type="tel" name="phone" required />
+      </div>
+      <div class="field">
+        <label>Mensagem</label>
+        <textarea name="message" placeholder="Informe o segmento ou dúvidas" required></textarea>
+      </div>
+      <button class="btn-send" type="submit">Enviar Matrícula</button>
+      <div id="formStatus" class="muted"></div>
+    </form>
+  </main>
+
+  <script>
+    const form = document.getElementById('matriculaForm');
+    const status = document.getElementById('formStatus');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      status.textContent = '';
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const phone = form.phone.value.trim();
+      const message = form.message.value.trim();
+
+      if (!name || !email || !phone || !message) {
+        status.textContent = 'Por favor, preencha todos os campos.';
+        return;
+      }
+
+      status.textContent = 'Enviando...';
+      setTimeout(() => {
+        status.textContent = 'Matrícula enviada com sucesso (simulação).';
+        form.reset();
+      }, 900);
+    });
+  </script>
+</body>
+</html>

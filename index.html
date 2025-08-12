@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Escola Modelo — Home</title>
+  <meta name="description" content="Site institucional exemplo para teste admissional" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="wrap">
+  <div class="nav">
+    <div class="brand">
+      <div class="logo">EM</div>
+      <div>
+        <div style="font-weight:700">Escola Modelo</div>
+        <div style="font-size:12px;color:var(--muted)">Aprender com propósito</div>
+      </div>
+    </div>
+
+    <nav id="mainNav" aria-label="Menu principal">
+      <button class="nav-toggle" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">☰</button>
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#colegio">Colégio</a></li>
+        <li><a href="#segmentos">Segmentos</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a class="btn-cta" href="matricula.html" target="_blank" rel="noopener noreferrer">Matricule-se</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- Carrossel -->
+  <section class="hero" id="home">
+    <div class="carousel" id="carousel">
+      <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=60');">
+        <div class="slide-content">
+          <h1>Matrículas Abertas 2025</h1>
+          <p>Garanta a sua vaga na Escola Modelo — ensino de qualidade, apoio individual e ambiente acolhedor.</p>
+          <a class="btn-cta" href="#contato">Inscrever-se</a>
+        </div>
+      </div>
+
+
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=60');">
+        <div class="slide-content">
+          <h1>Segmentos do ensino</h1>
+          <p>Do Infantil ao Médio — projetos pedagógicos atualizados e equipe qualificada.</p>
+          <a class="btn-cta" href="#segmentos">Conhecer</a>
+        </div>
+      </div>
+
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1600&q=60');">
+        <div class="slide-content">
+          <h1>Atividades Extracurriculares</h1>
+          <p>Esportes, música, arte e tecnologia para complementar o desenvolvimento.</p>
+          <a class="btn-cta" href="#diferenciais">Saiba mais</a>
+        </div>
+      </div>
+
+      <div class="carousel-controls">
+        <div class="dots" id="dots"></div>
+        <div>
+          <button class="carousel-btn" id="prevBtn">◀</button>
+          <button class="carousel-btn" id="nextBtn">▶</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="about-school" id="colegio" style="margin-top: 40px;">
+    <h2>Sobre Nossa Escola</h2>
+    <p>
+      Fundada em 1995, a Escola Modelo é referência em educação inovadora e de alta qualidade. Nosso compromisso é formar cidadãos críticos, criativos e preparados para os desafios do mundo contemporâneo. 
+      Aliamos tecnologia avançada, metodologias ativas e uma equipe pedagógica experiente para promover um ambiente de aprendizagem estimulante e acolhedor.
+    </p>
+    <p>
+      Acreditamos que a educação deve ir além do conteúdo acadêmico, valorizando o desenvolvimento socioemocional, ético e cultural dos alunos. Por isso, oferecemos um currículo diversificado, que inclui projetos interdisciplinares, atividades extracurriculares e programas de apoio individualizado.
+    </p>
+    <p>
+      Nossa infraestrutura moderna conta com laboratórios de ciência e tecnologia, biblioteca atualizada, espaços para arte e esportes, garantindo um ambiente completo para o crescimento integral dos estudantes. Estamos comprometidos em preparar cada aluno para uma trajetória de sucesso, dentro e fora da escola.
+    </p>
+  </section>
+  
+
+  <!-- Segmentos -->
+  <section class="segments" id="segmentos">
+    <h2>Segmentos</h2>
+    <div class="grid">
+      <article class="segment">
+        <h3>Educação Infantil</h3>
+        <p>Ambientes lúdicos e afetivos para o desenvolvimento social, motor e cognitivo.</p>
+      </article>
+      <article class="segment">
+        <h3>Ensino Fundamental I</h3>
+        <p>Promoção da alfabetização e desenvolvimento das competências básicas.</p>
+      </article>
+      <article class="segment">
+        <h3>Ensino Fundamental II</h3>
+        <p>Fortalecimento de habilidades científicas, linguísticas e socioemocionais.</p>
+      </article>
+      <article class="segment">
+        <h3>Ensino Médio</h3>
+        <p>Preparação para o ensino superior e para a vida com orientação vocacional.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <section class="difs" id="diferenciais">
+    <h2>Diferenciais</h2>
+    <div class="grid">
+      <div class="dif">
+        <div class="icon">A</div>
+        <div>
+          <h3>Acolhimento</h3>
+          <p>Atendimento próximo e apoio a alunos e famílias.</p>
+        </div>
+      </div>
+      <div class="dif">
+        <div class="icon">P</div>
+        <div>
+          <h3>Programas de Ensino</h3>
+          <p>Metodologias modernas e aprendizagem por projetos.</p>
+        </div>
+      </div>
+      <div class="dif">
+        <div class="icon">E</div>
+        <div>
+          <h3>Extracurriculares</h3>
+          <p>Esportes, música, arte e tecnologia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="contact" id="contato">
+    <div>
+      <h2>Fale conosco</h2>
+      <form id="contactForm" class="contact-card">
+        <div class="field">
+          <label>Nome</label>
+          <input type="text" name="name" required>
+        </div>
+        <div class="field">
+          <label>E-mail</label>
+          <input type="email" name="email" required>
+        </div>
+        <div class="field">
+          <label>Mensagem</label>
+          <textarea name="message" required></textarea>
+        </div>
+        <button class="btn-send" type="submit">Enviar</button>
+        <div id="formStatus" class="muted"></div>
+      </form>
+    </div>
+    <aside class="contact-card">
+      <h3>Informações</h3>
+      <p class="muted">Rua Exemplo, 123 — Bairro Educacional<br>São Paulo - SP</p>
+      <p><strong>Telefone:</strong> (11) 99999-9999<br><strong>E-mail:</strong> contato@escolamodelo.com</p>
+    </aside>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <strong>Escola Modelo</strong>
+        <div class="muted">© 2025 • Todos os direitos reservados</div>
+      </div>
+      <div>
+        <div class="muted">(11) 99999-9999 • contato@escolamodelo.com</div>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script src="carousel.js"></script>
+</body>
+</html>
