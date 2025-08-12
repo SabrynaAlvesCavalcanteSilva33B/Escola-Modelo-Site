@@ -130,7 +130,8 @@ section{scroll-margin-top: 80px; padding: 16px;}
 }
 
 .about-school {
-  background: linear-gradient(135deg, #3a72d6, #ffd45a);
+  background: linear-gradient(135deg, rgba(74, 74, 74, 0.7), rgba(160, 160, 160, 0.3));
+
   color: #1a1a1a; /* texto escuro para contraste */
   padding: 48px 24px;
   border-radius: var(--radius);
