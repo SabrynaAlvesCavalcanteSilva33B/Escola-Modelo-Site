@@ -143,69 +143,56 @@ section{scroll-margin-top: 80px; padding: 16px; }
 }
 
 
-.about-school {
+ /* Container flex para as duas sections */
+ .container {
   display: flex;
-  flex-wrap: wrap;
+  gap: 20px;
   align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  padding: 40px;
-  background-color: rgba(255, 255, 255, 0.85); /* fundo mais transparente */
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-.about-content {
-  flex: 1 1 400px;
-  color: #333;
+/* Cada section vai ocupar espaço flexível mínimo 300px */
+.about-school, .about-image {
+  flex: 1 1 300px;
+  box-sizing: border-box;
 }
 
+/* Estilo do texto */
 .about-content h2 {
-  font-size: 2rem;
-  color: var(--primary);
   margin-bottom: 15px;
+  color: var(--primary);
 }
 
 .about-content p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-.about-text {
-  flex: 2;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #333;
 }
 
-.about-image {
-  flex: 1 1 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-image img {
-  width: 100%; /* reduz a largura */
-  max-width: 100%; /* garante limite de tamanho */
+/* Imagem responsiva */
+.about-img img {
+  max-width: 100%;
   height: auto;
   display: block;
-  border-radius: 15px;
-  object-fit: cover;
+  border-radius: 8px;
 }
 
-/* Para telas pequenas (ex: celular) */
+/* Ajuste para telas pequenas */
 @media (max-width: 600px) {
-  .about-school {
-    flex-direction: column; /* Empilha o texto e a imagem verticalmente */
+  .container {
+    flex-direction: column;
     padding: 10px;
   }
 
-.about-school p {
-  font-size: 1.15rem;
-  max-width: 720px;
-  margin: 0 auto 20px auto;
-  font-weight: 300;
-  text-shadow: 0 0 5px rgba(0,0,0,0.15);
+  .about-school, .about-image {
+    flex: 1 1 100%;
+  }
 }
-
 .events {
   margin: 40px 0;
 }
