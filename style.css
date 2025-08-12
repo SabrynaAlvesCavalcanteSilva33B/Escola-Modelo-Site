@@ -145,6 +145,7 @@ section{scroll-margin-top: 80px; padding: 16px; }
 
 .about-school {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
@@ -156,7 +157,7 @@ section{scroll-margin-top: 80px; padding: 16px; }
 }
 
 .about-content {
-  flex: 1;
+  flex: 1 1 400px;
   color: #333;
 }
 
@@ -175,18 +176,27 @@ section{scroll-margin-top: 80px; padding: 16px; }
 }
 
 .about-image {
-  flex: 1;
+  flex: 1 1 300px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .about-image img {
-  width: 70%; /* reduz a largura */
-  max-width: 350px; /* garante limite de tamanho */
+  width: 100%; /* reduz a largura */
+  max-width: 100%; /* garante limite de tamanho */
+  height: auto;
+  display: block;
   border-radius: 15px;
   object-fit: cover;
 }
+
+/* Para telas pequenas (ex: celular) */
+@media (max-width: 600px) {
+  .about-school {
+    flex-direction: column; /* Empilha o texto e a imagem verticalmente */
+    padding: 10px;
+  }
 
 .about-school p {
   font-size: 1.15rem;
